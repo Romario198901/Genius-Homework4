@@ -1,0 +1,112 @@
+.our-procedures {
+&__slider {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 18px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  }
+  &__container {
+    overflow: hidden;
+  }
+  &__title {
+    text-align: center;
+    color: var(--color-primary-dark);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    @media  screen and (min-width: 768px) {
+      text-align: center;
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    }
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media  screen and (min-width: 1280px) {
+      display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: solid 1px transparent;
+    cursor: pointer;
+    --path1bg:var(--color-primary-white);
+    --path2color:var(--color-primary-dark);
+    --path3color:var(--color-primary-dark);
+    &:hover {
+      --path1bg:var(--color-primary-light);
+      --path2color:var(--color-primary-white);
+      --path3color:var(--color-primary-white);
+    }
+    }
+  }
+  &__list {
+    max-width: 316px;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 0;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-block: 0;
+      margin-bottom: 32px;
+      max-width: 1440px;
+      padding: 0;
+    }
+  }
+  &__item {
+    height: 456px;
+    width: auto!important;
+  }
+  &__card {
+      position: relative;
+    height: 456px;
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  border-radius: 120px 4px 120px 4px;
+  flex-grow: 1; 
+  overflow: hidden;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+    }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+  text-align: center;
+  color: var(--color-primary-white);
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2;
+
+  text-align: center;
+  color: var(--color-primary-white);
+    }
+  }
+}
+
+  

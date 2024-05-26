@@ -1,0 +1,71 @@
+.why__we__are {
+&__title {
+  text-align: center;
+    color: var(--color-primary-dark);
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 250px;
+    text-wrap: wrap;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    color: var(--color-primary-dark);
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 432px;
+    text-wrap: wrap; 
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 768px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      flex-direction: row;
+      gap: 56px;
+      width: 100%;
+      max-width: 1440px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  }
+  &__card {
+    width: 316px;
+    height: 181px;
+    background-color: var(--color-primary-white);
+    border-radius: 32px;
+    box-shadow: var(--color-secondary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  &__icon {
+  width: 48px;
+  height: 48px;
+  fill: var(--color-primary-light);
+  }
+  &__text {
+    font-weight: 400;
+    size: 18px;
+    line-height: 1.5;
+    height: 72px;
+    text-align: center;
+  }
+}

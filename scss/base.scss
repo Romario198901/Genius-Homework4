@@ -1,0 +1,45 @@
+
+body {
+  font-family: "Roboto";
+
+}
+section {
+  margin: 0;
+  width: 100%;
+  max-width: 768px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    width: 100%;
+    max-width: 1440px; 
+  }
+}
+a, h1, h2, h3, p {
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+}
+span {
+  color: var(--color-primary-light);
+}
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--color-primary-dark);
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
